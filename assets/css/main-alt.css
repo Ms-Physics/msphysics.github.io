@@ -1,0 +1,18 @@
+.periodic-square {
+    border: 3px solid white;
+    width: 60px;
+    height: 70px;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    padding-top: .4em;
+    font-weight: bold;
+}
+
+.periodic-square-number {
+    position: absolute;
+    top: .5em;
+    right: .1em;
+    line-height: 0;
+    font-size: .45em;
+}
