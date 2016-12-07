@@ -3579,9 +3579,11 @@ body.is-menu-visible #menu {
         width: 100%;
     }
 
-    #footer .inner form {
+    #footer .inner #msg-area {
         margin: 0 3em 0 0;
         width: calc(50% - 1.5em);
+        height: 28em;
+        display: table;
     }
 
     #footer .inner .contact {
