@@ -193,7 +193,7 @@
                     "X-Api-Key": "tK8TTas3hp4eNW5CDYTMi5g2RXRngwQE5n2K3txv"
                 },
                 data: JSON.stringify({
-                    "toaddress": "bskrtich@bearded.io",
+                    "toaddress": "chelsey@msphysics.com",
                     "name": name,
                     "email": email,
                     "message": message
