@@ -1,0 +1,9 @@
+version: '2'
+services:
+  msphysics:
+    build: .
+    container_name: "msphysics"
+    volumes:
+      - .:/var/www/html
+    ports:
+     - "80"
