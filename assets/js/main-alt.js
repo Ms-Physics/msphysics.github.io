@@ -23,7 +23,11 @@
         // Load Footer
         if ($('#footer').length) {
             $('#footer').load('/assets/html/footer.html', function() {
+                // Add year to copyright
                 $('.year').html(new Date().getFullYear());
+
+                // Hook contact submit button to function
+                $("#msg-send").click(msgSend);
             });
         }
 
@@ -32,7 +36,7 @@
             return email.length > 0 && emailReg.test(email);
         }
 
-        $("#msg-send").click(function(event) {
+        function msgSend(event) {
             var name = $("#msg-name").val();
             var email = $("#msg-email").val();
             var message = $("#msg-text").val();
@@ -88,8 +92,7 @@
                     $("#msg-error").show();
                 }
             });
-        });
-
+        }
     });
 
 })(jQuery);
