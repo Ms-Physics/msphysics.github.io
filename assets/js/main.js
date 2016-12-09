@@ -1,3 +1,4 @@
+"use strict";
 /*
     Solid State by HTML5 UP
     html5up.net | @ajlkn
@@ -5,9 +6,6 @@
 */
 
 (function($) {
-
-    "use strict";
-
     skel.breakpoints({
         xlarge: '(max-width: 1680px)',
         large:  '(max-width: 1280px)',

@@ -1,0 +1,82 @@
+{
+    "courses": [
+        {
+            "year": 2016,
+            "semester": "fall",
+            "file": "course-2016-zzFall-FRCC-PHY112A.html",
+            "name": "2016 Fall FRCC PHY112A",
+            "image": "",
+            "desc": ""
+        },
+        {
+            "year": 2016,
+            "semester": "summer",
+            "file": "course-2016-zzFall-FRCC-PHY112A.html",
+            "name": "2016 Fall FRCC PHY112A",
+            "image": "",
+            "desc": ""
+        },
+        {
+            "year": 2017,
+            "semester": "fall",
+            "file": "course-2016-zzFall-FRCC-PHY112A.html",
+            "name": "2016 Fall FRCC PHY112A",
+            "image": "",
+            "desc": ""
+        },
+        {
+            "year": 2016,
+            "semester": "fall",
+            "file": "course-2016-zzFall-FRCC-PHY112A.html",
+            "name": "2016 Fall FRCC PHY000",
+            "image": "",
+            "desc": ""
+        }
+    ],
+    "semesters": [
+        {
+            "name": "spring",
+            "start": {
+                "month": 1,
+                "day": 1
+            },
+            "end": {
+                "month": 5,
+                "day": 14
+            }
+        },
+        {
+            "name": "summer",
+            "start": {
+                "month": 5,
+                "day": 15
+            },
+            "end": {
+                "month": 8,
+                "day": 24
+            }
+        },
+        {
+            "name": "fall",
+            "start": {
+                "month": 8,
+                "day": 25
+            },
+            "end": {
+                "month": 12,
+                "day": 24
+            }
+        },
+        {
+            "name": "spring",
+            "start": {
+                "month": 12,
+                "day": 25
+            },
+            "end": {
+                "month": 12,
+                "day": 31
+            }
+        }
+    ]
+}
