@@ -7,7 +7,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 /* Basic */
 
 body {
-    -ms-behavior: url("assets/js/backgroundsize.min.htc");
+    -ms-behavior: url("/assets/js/backgroundsize.min.htc");
 }
 
 /* Type */
@@ -36,7 +36,7 @@ input[type="button"],
 button,
 .button {
     position: relative;
-    -ms-behavior: url("assets/js/ie/PIE.htc");
+    -ms-behavior: url("/assets/js/ie/PIE.htc");
     border: solid 2px #ffffff;
 }
 
@@ -57,7 +57,7 @@ input[type="tel"],
 select,
 textarea {
     position: relative;
-    -ms-behavior: url("assets/js/ie/PIE.htc");
+    -ms-behavior: url("/assets/js/ie/PIE.htc");
     background: transparent;
     border: solid 2px #ffffff;
 }
@@ -95,7 +95,7 @@ table.alt tfoot {
 /* Features */
 
 .features article {
-    -ms-behavior: url("assets/js/ie/PIE.htc");
+    -ms-behavior: url("/assets/js/ie/PIE.htc");
     position: relative;
     width: 44%;
 }
@@ -133,19 +133,19 @@ table.alt tfoot {
     }
 
     .wrapper.spotlight .image {
-        -ms-behavior: url("assets/js/ie/PIE.htc");
+        -ms-behavior: url("/assets/js/ie/PIE.htc");
     }
 
         .wrapper.spotlight .image img {
             position: relative;
-            -ms-behavior: url("assets/js/ie/PIE.htc");
+            -ms-behavior: url("/assets/js/ie/PIE.htc");
         }
 
 /* Banner */
 
 #banner .logo .icon {
     border: solid 2px #ffffff;
-    -ms-behavior: url("assets/js/ie/PIE.htc");
+    -ms-behavior: url("/assets/js/ie/PIE.htc");
 }
 
 #banner h2 {
