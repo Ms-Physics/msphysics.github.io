@@ -1,9 +1,6 @@
 "use strict";
-/*
-    Solid State by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+if (!window.console) console = {log: function() {}};
 
 (function($) {
     $(function() {
@@ -30,7 +27,7 @@
         }
 
         // Load course info
-        $.getJSON("/courses/_list.json", function(data) {
+        $.getJSON("/courses/alist.json", function(data) {
             var ccourses;
 
             //console.log(data);
