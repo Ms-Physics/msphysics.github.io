@@ -28,10 +28,10 @@ if (!window.console) console = {log: function() {}};
 
         // Load course info
         $.getJSON("/courses/alist.json", function(data) {
-            var ccourses;
+            var cursemester, curcourses, pastcourses;
 
-            //console.log(data);
-            var csemester = _.find(data.semesters, function(item) {
+            // Find current semester
+            var cursemester = _.find(data.semesters, function(item) {
                 var startdate = new Date(cdate);
                 var enddate = new Date(cdate);
 
@@ -44,13 +44,66 @@ if (!window.console) console = {log: function() {}};
                 return (startdate.getTime() <= cdate.getTime() && cdate.getTime() <= enddate.getTime());
             });
 
-            console.log(csemester);
+            // Find courses
+            curcourses = _.where(data.courses, {"year": cdate.getFullYear(), "semester": cursemester.name});
+            pastcourses = _.filter(data.courses, function(course) {
+                if (course.year < cdate.getFullYear()) {
+                    return true;
+                } else if (course.year == cdate.getFullYear() &&
+                    data.semester_order[course.semester] < data.semester_order[cursemester.name]) {
+                    return true;
+                }
 
-            ccourses = _.where(data.courses, {"year": cdate.getFullYear(), "semester": csemester.name});
+                return false;
+            });
+            _.where(data.courses, {"year": cdate.getFullYear(), "semester": curcourses.name});
 
-            console.log(ccourses);
+            console.log(curcourses);
 
+            // current-courses-tiles
+            if ($("#current-courses-tiles").length > 0) {
+                load_current_courses_tiles("#current-courses-tiles", curcourses);
+            }
+
+            // current-courses
+            if ($("#current-courses").length > 0) {
+                load_courses_table("#current-courses", curcourses);
+            }
+
+            // past-courses
+            if ($("#past-courses").length > 0) {
+                load_courses_table("#past-courses", pastcourses);
+            }
         });
+
+        function load_current_courses_tiles(tagid, courses) {
+
+        }
+
+        function load_courses_table(tagid, courses) {
+            if (Array.isArray(courses) && courses.length > 0) {
+                $(tagid).find('tbody').html("");
+
+                $.each(courses, function(idx, course) {
+                    var row = $([
+                        '<tr>',
+                        '    <td>'+course.semester.toTitleCase()+' '+course.year+'</td>',
+                        '    <td>'+course.college+'</td>',
+                        '    <td>'+course.name+'</td>',
+                        '    <td><a href="'+course.file+'">Course Description</a></td>',
+                        '</tr>'
+                    ].join("\n"));
+
+                    $(tagid).find('tbody').append(row);
+                });
+            }
+        }
+
+        String.prototype.toTitleCase = function () {
+            return this.replace(/\w\S*/g, function(txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
+        };
 
         function validEmail(email) {
             var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;

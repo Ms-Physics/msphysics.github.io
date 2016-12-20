@@ -3478,7 +3478,6 @@ body.is-menu-visible #menu {
 
             .wrapper .inner {
                 padding: 3em 3em 1em 3em;
-                margin: 3em 3em 1em 3em;
                 width: 100%;
             }
 
@@ -3514,7 +3513,6 @@ body.is-menu-visible #menu {
 
             .wrapper .inner {
                 padding: 2em 2em 0.1em 2em;
-                margin: 2em 2em 0.1em 2em;
             }
 
             .wrapper.spotlight .inner {
@@ -3553,7 +3551,6 @@ body.is-menu-visible #menu {
 
         .wrapper .inner {
             padding: 2em 1.5em 0.1em 1.5em;
-            margin: 2em 1.5em 0.1em 1.5em;
         }
 
     }

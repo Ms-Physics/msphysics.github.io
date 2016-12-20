@@ -1,38 +1,65 @@
 {
     "courses": [
         {
-            "year": 2016,
-            "semester": "fall",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html",
-            "name": "2016 Fall FRCC PHY112A",
+            "year": 2015,
+            "semester": "summer",
+            "college": "Front Range",
+            "name": "PHY112A - E&M",
+            "desc": "e&m description",
             "image": "",
-            "desc": ""
+            "file": "course-2016-zzFall-FRCC-PHY112A.html"
         },
         {
             "year": 2016,
-            "semester": "summer",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html",
-            "name": "2016 Fall FRCC PHY112A",
+            "semester": "spring",
+            "college": "Front Range",
+            "name": "PHY111A",
+            "desc": "111A description",
             "image": "",
-            "desc": ""
+            "file": "course-2016-zzFall-FRCC-PHY112A.html"
+        },
+        {
+            "year": 2016,
+            "semester": "fall",
+            "college": "Front Range",
+            "name": "PHY111A",
+            "desc": "111A description",
+            "image": "",
+            "file": "course-2016-zzFall-FRCC-PHY112A.html"
+        },
+        {
+            "year": 2016,
+            "semester": "fall",
+            "college": "Front Range",
+            "name": "PHY112A - E&M",
+            "desc": "e&m description",
+            "image": "",
+            "file": "course-2016-zzFall-FRCC-PHY112A.html"
         },
         {
             "year": 2017,
             "semester": "fall",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html",
-            "name": "2016 Fall FRCC PHY112A",
+            "college": "Front Range",
+            "name": "PHY112A - E&M",
+            "desc": "e&m description",
             "image": "",
-            "desc": ""
+            "file": "course-2016-zzFall-FRCC-PHY112A.html"
         },
         {
-            "year": 2016,
-            "semester": "fall",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html",
-            "name": "2016 Fall FRCC PHY000",
+            "year": 2017,
+            "semester": "summer",
+            "college": "Front Range",
+            "name": "PHY112A - E&M",
+            "desc": "e&m description",
             "image": "",
-            "desc": ""
+            "file": "course-2016-zzFall-FRCC-PHY112A.html"
         }
     ],
+    "semester_order": {
+        "spring": 1,
+        "summer": 2,
+        "fall": 3
+    },
     "semesters": [
         {
             "name": "spring",
@@ -60,17 +87,6 @@
             "name": "fall",
             "start": {
                 "month": 8,
-                "day": 25
-            },
-            "end": {
-                "month": 12,
-                "day": 24
-            }
-        },
-        {
-            "name": "spring",
-            "start": {
-                "month": 12,
                 "day": 25
             },
             "end": {
