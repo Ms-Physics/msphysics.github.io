@@ -1,58 +1,41 @@
 {
     "courses": [
         {
+            "id": "2017.1-1",
+            "year": 2017,
+            "semester": "spring",
+            "college": "Front Range",
+            "name": "PHY111A - Kinematics",
+            "image": "/images/solar_system.jpg",
+            "desc": "Examines kinematics, force, circular motion, energy, momentum, torque, rotational dynamics, simple harmonic motion, temperature, heat, and thermodynamics."
+        },
+        {
+            "id": "2017.1-2",
+            "year": 2017,
+            "semester": "spring",
+            "college": "Front Range",
+            "name": "PHY112A - E&M",
+            "image": "/images/lightning2.jpg",
+            "desc": "Expands upon PHY 111 and covers sound waves, electric fields, electric circuits, magnetic fields, light and optics, and modern physics."
+        },
+
+        {
+            "id": "2015.2-1",
             "year": 2015,
             "semester": "summer",
             "college": "Front Range",
             "name": "PHY112A - E&M",
-            "desc": "e&m description",
             "image": "",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html"
+            "desc": "e&m description"
         },
         {
-            "year": 2016,
-            "semester": "spring",
-            "college": "Front Range",
-            "name": "PHY111A",
-            "desc": "111A description",
-            "image": "",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html"
-        },
-        {
-            "year": 2016,
-            "semester": "fall",
-            "college": "Front Range",
-            "name": "PHY111A",
-            "desc": "111A description",
-            "image": "",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html"
-        },
-        {
-            "year": 2016,
-            "semester": "fall",
-            "college": "Front Range",
-            "name": "PHY112A - E&M",
-            "desc": "e&m description",
-            "image": "",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html"
-        },
-        {
+            "id": "2017.3-1",
             "year": 2017,
             "semester": "fall",
             "college": "Front Range",
             "name": "PHY112A - E&M",
-            "desc": "e&m description",
             "image": "",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html"
-        },
-        {
-            "year": 2017,
-            "semester": "summer",
-            "college": "Front Range",
-            "name": "PHY112A - E&M",
-            "desc": "e&m description",
-            "image": "",
-            "file": "course-2016-zzFall-FRCC-PHY112A.html"
+            "desc": "e&m description"
         }
     ],
     "semester_order": {

@@ -3300,7 +3300,7 @@ body.is-menu-visible #menu {
         -webkit-transform: scaleY(-1);
         -ms-transform: scaleY(-1);
         transform: scaleY(-1);
-        bottom: -6.5em;
+        bottom: -6.45em;
         left: 0;
     }
 
