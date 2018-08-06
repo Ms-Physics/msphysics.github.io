@@ -1,4 +1,4 @@
-# OS generated files
+# OS Generated Files
 .DS_Store
 .DS_Store?
 ._*
@@ -9,8 +9,12 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-# Editor tmp files
+# Editor Files
+.idea
+.vscode
 .fuse_hidden*
+*.sublime*
 *.codekit
-*.swp
 *.bak
+*.iml
+*.swp

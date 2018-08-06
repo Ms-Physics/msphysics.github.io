@@ -168,17 +168,17 @@ if (!window.console) console = {log: function() {}};
             // Send message
             $("#msg-form").hide();
             $("#msg-processing").show();
-            var url = "https://xy4toks6ha.execute-api.us-west-2.amazonaws.com/prod/contact";
+            var url = "https://gxmkmugvrk.execute-api.us-west-2.amazonaws.com/default/sendMail";
             $.ajax({
                 type: "POST",
                 url: url,
                 headers: {
-                    "X-Api-Key": "tK8TTas3hp4eNW5CDYTMi5g2RXRngwQE5n2K3txv"
+                    "X-Api-Key": "none"
                 },
                 data: JSON.stringify({
-                    "toaddress": "chelsey@msphysics.com",
-                    "name": name,
+                    "to_id": "Il40dG4wc1", // chelsey.msphysics.com
                     "email": email,
+                    "name": name,
                     "message": message
                 }),
                 crossDomain: true,
